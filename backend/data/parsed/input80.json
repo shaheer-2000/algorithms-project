@@ -1,0 +1,2808 @@
+{
+    "numOfNodes": 80,
+    "nodes": [
+        {
+            "id": "0",
+            "position": {
+                "x": 0.734706,
+                "y": 0.580153
+            }
+        },
+        {
+            "id": "1",
+            "position": {
+                "x": 0.445956,
+                "y": 0.455588
+            }
+        },
+        {
+            "id": "2",
+            "position": {
+                "x": 0.396471,
+                "y": 0.349877
+            }
+        },
+        {
+            "id": "3",
+            "position": {
+                "x": 0.928098,
+                "y": 0.553529
+            }
+        },
+        {
+            "id": "4",
+            "position": {
+                "x": 0.051252,
+                "y": 0.584477
+            }
+        },
+        {
+            "id": "5",
+            "position": {
+                "x": 0.656725,
+                "y": 0.314632
+            }
+        },
+        {
+            "id": "6",
+            "position": {
+                "x": 0.393713,
+                "y": 0.427204
+            }
+        },
+        {
+            "id": "7",
+            "position": {
+                "x": 0.923801,
+                "y": 0.395272
+            }
+        },
+        {
+            "id": "8",
+            "position": {
+                "x": 0.946147,
+                "y": 0.406843
+            }
+        },
+        {
+            "id": "9",
+            "position": {
+                "x": 0.371565,
+                "y": 0.512034
+            }
+        },
+        {
+            "id": "10",
+            "position": {
+                "x": 0.177492,
+                "y": 0.359032
+            }
+        },
+        {
+            "id": "11",
+            "position": {
+                "x": 0.676976,
+                "y": 0.442122
+            }
+        },
+        {
+            "id": "12",
+            "position": {
+                "x": 0.057904,
+                "y": 0.032334
+            }
+        },
+        {
+            "id": "13",
+            "position": {
+                "x": 0.968585,
+                "y": 0.324168
+            }
+        },
+        {
+            "id": "14",
+            "position": {
+                "x": 0.51761,
+                "y": 0.03534
+            }
+        },
+        {
+            "id": "15",
+            "position": {
+                "x": 0.194577,
+                "y": 0.165678
+            }
+        },
+        {
+            "id": "16",
+            "position": {
+                "x": 0.778825,
+                "y": 0.48102
+            }
+        },
+        {
+            "id": "17",
+            "position": {
+                "x": 0.160734,
+                "y": 0.56337
+            }
+        },
+        {
+            "id": "18",
+            "position": {
+                "x": 0.029451,
+                "y": 0.384607
+            }
+        },
+        {
+            "id": "19",
+            "position": {
+                "x": 0.457069,
+                "y": 0.342646
+            }
+        },
+        {
+            "id": "20",
+            "position": {
+                "x": 0.407336,
+                "y": 0.571235
+            }
+        },
+        {
+            "id": "21",
+            "position": {
+                "x": 0.99189,
+                "y": 0.322469
+            }
+        },
+        {
+            "id": "22",
+            "position": {
+                "x": 0.763822,
+                "y": 0.549596
+            }
+        },
+        {
+            "id": "23",
+            "position": {
+                "x": 0.352022,
+                "y": 0.511863
+            }
+        },
+        {
+            "id": "24",
+            "position": {
+                "x": 0.175338,
+                "y": 0.507864
+            }
+        },
+        {
+            "id": "25",
+            "position": {
+                "x": 0.707962,
+                "y": 0.544318
+            }
+        },
+        {
+            "id": "26",
+            "position": {
+                "x": 0.671799,
+                "y": 0.088133
+            }
+        },
+        {
+            "id": "27",
+            "position": {
+                "x": 0.482703,
+                "y": 0.25633
+            }
+        },
+        {
+            "id": "28",
+            "position": {
+                "x": 0.150544,
+                "y": 0.29562
+            }
+        },
+        {
+            "id": "29",
+            "position": {
+                "x": 0.502976,
+                "y": 0.016328
+            }
+        },
+        {
+            "id": "30",
+            "position": {
+                "x": 0.944572,
+                "y": 0.198887
+            }
+        },
+        {
+            "id": "31",
+            "position": {
+                "x": 0.851671,
+                "y": 0.110247
+            }
+        },
+        {
+            "id": "32",
+            "position": {
+                "x": 0.013829,
+                "y": 0.177325
+            }
+        },
+        {
+            "id": "33",
+            "position": {
+                "x": 0.140173,
+                "y": 0.589993
+            }
+        },
+        {
+            "id": "34",
+            "position": {
+                "x": 0.228285,
+                "y": 0.372154
+            }
+        },
+        {
+            "id": "35",
+            "position": {
+                "x": 0.419373,
+                "y": 0.291041
+            }
+        },
+        {
+            "id": "36",
+            "position": {
+                "x": 0.711569,
+                "y": 0.097193
+            }
+        },
+        {
+            "id": "37",
+            "position": {
+                "x": 0.448101,
+                "y": 0.025429
+            }
+        },
+        {
+            "id": "38",
+            "position": {
+                "x": 0.713884,
+                "y": 0.065639
+            }
+        },
+        {
+            "id": "39",
+            "position": {
+                "x": 0.537733,
+                "y": 0.256395
+            }
+        },
+        {
+            "id": "40",
+            "position": {
+                "x": 0.982988,
+                "y": 0.589113
+            }
+        },
+        {
+            "id": "41",
+            "position": {
+                "x": 0.691711,
+                "y": 0.060899
+            }
+        },
+        {
+            "id": "42",
+            "position": {
+                "x": 0.101956,
+                "y": 0.005232
+            }
+        },
+        {
+            "id": "43",
+            "position": {
+                "x": 0.258749,
+                "y": 0.286286
+            }
+        },
+        {
+            "id": "44",
+            "position": {
+                "x": 0.762499,
+                "y": 0.289927
+            }
+        },
+        {
+            "id": "45",
+            "position": {
+                "x": 0.818447,
+                "y": 0.307347
+            }
+        },
+        {
+            "id": "46",
+            "position": {
+                "x": 0.442577,
+                "y": 0.110795
+            }
+        },
+        {
+            "id": "47",
+            "position": {
+                "x": 0.518086,
+                "y": 0.290009
+            }
+        },
+        {
+            "id": "48",
+            "position": {
+                "x": 0.457052,
+                "y": 0.27771
+            }
+        },
+        {
+            "id": "49",
+            "position": {
+                "x": 0.579343,
+                "y": 0.167929
+            }
+        },
+        {
+            "id": "50",
+            "position": {
+                "x": 0.850153,
+                "y": 0.046942
+            }
+        },
+        {
+            "id": "51",
+            "position": {
+                "x": 0.193671,
+                "y": 0.038215
+            }
+        },
+        {
+            "id": "52",
+            "position": {
+                "x": 0.098471,
+                "y": 0.235057
+            }
+        },
+        {
+            "id": "53",
+            "position": {
+                "x": 0.525115,
+                "y": 0.382546
+            }
+        },
+        {
+            "id": "54",
+            "position": {
+                "x": 0.093266,
+                "y": 0.598817
+            }
+        },
+        {
+            "id": "55",
+            "position": {
+                "x": 0.039283,
+                "y": 0.219934
+            }
+        },
+        {
+            "id": "56",
+            "position": {
+                "x": 0.370805,
+                "y": 0.237358
+            }
+        },
+        {
+            "id": "57",
+            "position": {
+                "x": 0.877256,
+                "y": 0.597371
+            }
+        },
+        {
+            "id": "58",
+            "position": {
+                "x": 0.059515,
+                "y": 0.472877
+            }
+        },
+        {
+            "id": "59",
+            "position": {
+                "x": 0.493152,
+                "y": 0.124616
+            }
+        },
+        {
+            "id": "60",
+            "position": {
+                "x": 0.512667,
+                "y": 0.366085
+            }
+        },
+        {
+            "id": "61",
+            "position": {
+                "x": 0.274129,
+                "y": 0.159383
+            }
+        },
+        {
+            "id": "62",
+            "position": {
+                "x": 0.095364,
+                "y": 0.522677
+            }
+        },
+        {
+            "id": "63",
+            "position": {
+                "x": 0.361547,
+                "y": 0.349154
+            }
+        },
+        {
+            "id": "64",
+            "position": {
+                "x": 0.094579,
+                "y": 0.547068
+            }
+        },
+        {
+            "id": "65",
+            "position": {
+                "x": 0.392061,
+                "y": 0.335899
+            }
+        },
+        {
+            "id": "66",
+            "position": {
+                "x": 0.22098,
+                "y": 0.399645
+            }
+        },
+        {
+            "id": "67",
+            "position": {
+                "x": 0.377376,
+                "y": 0.329921
+            }
+        },
+        {
+            "id": "68",
+            "position": {
+                "x": 0.671316,
+                "y": 0.01378
+            }
+        },
+        {
+            "id": "69",
+            "position": {
+                "x": 0.441436,
+                "y": 0.159103
+            }
+        },
+        {
+            "id": "70",
+            "position": {
+                "x": 0.220082,
+                "y": 0.228867
+            }
+        },
+        {
+            "id": "71",
+            "position": {
+                "x": 0.633774,
+                "y": 0.299795
+            }
+        },
+        {
+            "id": "72",
+            "position": {
+                "x": 0.30925,
+                "y": 0.595616
+            }
+        },
+        {
+            "id": "73",
+            "position": {
+                "x": 0.53779,
+                "y": 0.29558
+            }
+        },
+        {
+            "id": "74",
+            "position": {
+                "x": 0.604781,
+                "y": 0.109868
+            }
+        },
+        {
+            "id": "75",
+            "position": {
+                "x": 0.892699,
+                "y": 0.470198
+            }
+        },
+        {
+            "id": "76",
+            "position": {
+                "x": 0.988693,
+                "y": 0.031175
+            }
+        },
+        {
+            "id": "77",
+            "position": {
+                "x": 0.947903,
+                "y": 0.540845
+            }
+        },
+        {
+            "id": "78",
+            "position": {
+                "x": 0.455426,
+                "y": 0.442393
+            }
+        },
+        {
+            "id": "79",
+            "position": {
+                "x": 0.768529,
+                "y": 0.438122
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "e7-22",
+            "type": "straight",
+            "source": "7",
+            "target": "22",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e7-49",
+            "type": "straight",
+            "source": "7",
+            "target": "49",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e7-57",
+            "type": "straight",
+            "source": "7",
+            "target": "57",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e7-8",
+            "type": "straight",
+            "source": "7",
+            "target": "8",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e7-3",
+            "type": "straight",
+            "source": "7",
+            "target": "3",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e7-62",
+            "type": "straight",
+            "source": "7",
+            "target": "62",
+            "label": "64.37 MB"
+        },
+        {
+            "id": "e7-16",
+            "type": "straight",
+            "source": "7",
+            "target": "16",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e7-20",
+            "type": "straight",
+            "source": "7",
+            "target": "20",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e7-49",
+            "type": "straight",
+            "source": "7",
+            "target": "49",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e7-6",
+            "type": "straight",
+            "source": "7",
+            "target": "6",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e7-69",
+            "type": "straight",
+            "source": "7",
+            "target": "69",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e7-44",
+            "type": "straight",
+            "source": "7",
+            "target": "44",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e7-9",
+            "type": "straight",
+            "source": "7",
+            "target": "9",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e7-16",
+            "type": "straight",
+            "source": "7",
+            "target": "16",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e8-23",
+            "type": "straight",
+            "source": "8",
+            "target": "23",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e8-60",
+            "type": "straight",
+            "source": "8",
+            "target": "60",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e8-30",
+            "type": "straight",
+            "source": "8",
+            "target": "30",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e8-34",
+            "type": "straight",
+            "source": "8",
+            "target": "34",
+            "label": "82.97 MB"
+        },
+        {
+            "id": "e8-10",
+            "type": "straight",
+            "source": "8",
+            "target": "10",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e8-5",
+            "type": "straight",
+            "source": "8",
+            "target": "5",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e8-4",
+            "type": "straight",
+            "source": "8",
+            "target": "4",
+            "label": "47.21 MB"
+        },
+        {
+            "id": "e8-62",
+            "type": "straight",
+            "source": "8",
+            "target": "62",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e5-77",
+            "type": "straight",
+            "source": "5",
+            "target": "77",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e5-45",
+            "type": "straight",
+            "source": "5",
+            "target": "45",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e5-21",
+            "type": "straight",
+            "source": "5",
+            "target": "21",
+            "label": "94.41 MB"
+        },
+        {
+            "id": "e5-11",
+            "type": "straight",
+            "source": "5",
+            "target": "11",
+            "label": "37.19 MB"
+        },
+        {
+            "id": "e5-0",
+            "type": "straight",
+            "source": "5",
+            "target": "0",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e5-33",
+            "type": "straight",
+            "source": "5",
+            "target": "33",
+            "label": "25.75 MB"
+        },
+        {
+            "id": "e5-32",
+            "type": "straight",
+            "source": "5",
+            "target": "32",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e5-58",
+            "type": "straight",
+            "source": "5",
+            "target": "58",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e5-12",
+            "type": "straight",
+            "source": "5",
+            "target": "12",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e5-2",
+            "type": "straight",
+            "source": "5",
+            "target": "2",
+            "label": "47.21 MB"
+        },
+        {
+            "id": "e4-78",
+            "type": "straight",
+            "source": "4",
+            "target": "78",
+            "label": "74.39 MB"
+        },
+        {
+            "id": "e4-22",
+            "type": "straight",
+            "source": "4",
+            "target": "22",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e4-6",
+            "type": "straight",
+            "source": "4",
+            "target": "6",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e4-2",
+            "type": "straight",
+            "source": "4",
+            "target": "2",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e7-1",
+            "type": "straight",
+            "source": "7",
+            "target": "1",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e7-34",
+            "type": "straight",
+            "source": "7",
+            "target": "34",
+            "label": "28.61 MB"
+        },
+        {
+            "id": "e7-59",
+            "type": "straight",
+            "source": "7",
+            "target": "59",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e7-35",
+            "type": "straight",
+            "source": "7",
+            "target": "35",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e7-23",
+            "type": "straight",
+            "source": "7",
+            "target": "23",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e7-13",
+            "type": "straight",
+            "source": "7",
+            "target": "13",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e7-5",
+            "type": "straight",
+            "source": "7",
+            "target": "5",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e3-40",
+            "type": "straight",
+            "source": "3",
+            "target": "40",
+            "label": "54.36 MB"
+        },
+        {
+            "id": "e3-70",
+            "type": "straight",
+            "source": "3",
+            "target": "70",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e3-16",
+            "type": "straight",
+            "source": "3",
+            "target": "16",
+            "label": "54.36 MB"
+        },
+        {
+            "id": "e2-71",
+            "type": "straight",
+            "source": "2",
+            "target": "71",
+            "label": "75.82 MB"
+        },
+        {
+            "id": "e2-0",
+            "type": "straight",
+            "source": "2",
+            "target": "0",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e5-29",
+            "type": "straight",
+            "source": "5",
+            "target": "29",
+            "label": "22.89 MB"
+        },
+        {
+            "id": "e5-60",
+            "type": "straight",
+            "source": "5",
+            "target": "60",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e5-24",
+            "type": "straight",
+            "source": "5",
+            "target": "24",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e5-14",
+            "type": "straight",
+            "source": "5",
+            "target": "14",
+            "label": "24.32 MB"
+        },
+        {
+            "id": "e5-1",
+            "type": "straight",
+            "source": "5",
+            "target": "1",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e4-61",
+            "type": "straight",
+            "source": "4",
+            "target": "61",
+            "label": "72.96 MB"
+        },
+        {
+            "id": "e4-18",
+            "type": "straight",
+            "source": "4",
+            "target": "18",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e4-15",
+            "type": "straight",
+            "source": "4",
+            "target": "15",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e4-2",
+            "type": "straight",
+            "source": "4",
+            "target": "2",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e3-25",
+            "type": "straight",
+            "source": "3",
+            "target": "25",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e3-19",
+            "type": "straight",
+            "source": "3",
+            "target": "19",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e3-3",
+            "type": "straight",
+            "source": "3",
+            "target": "3",
+            "label": "37.19 MB"
+        },
+        {
+            "id": "e2-63",
+            "type": "straight",
+            "source": "2",
+            "target": "63",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e2-4",
+            "type": "straight",
+            "source": "2",
+            "target": "4",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e3-29",
+            "type": "straight",
+            "source": "3",
+            "target": "29",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e3-26",
+            "type": "straight",
+            "source": "3",
+            "target": "26",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e3-6",
+            "type": "straight",
+            "source": "3",
+            "target": "6",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e6-68",
+            "type": "straight",
+            "source": "6",
+            "target": "68",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e6-37",
+            "type": "straight",
+            "source": "6",
+            "target": "37",
+            "label": "55.79 MB"
+        },
+        {
+            "id": "e6-46",
+            "type": "straight",
+            "source": "6",
+            "target": "46",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e6-36",
+            "type": "straight",
+            "source": "6",
+            "target": "36",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e6-27",
+            "type": "straight",
+            "source": "6",
+            "target": "27",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e6-9",
+            "type": "straight",
+            "source": "6",
+            "target": "9",
+            "label": "24.32 MB"
+        },
+        {
+            "id": "e3-42",
+            "type": "straight",
+            "source": "3",
+            "target": "42",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e3-28",
+            "type": "straight",
+            "source": "3",
+            "target": "28",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e3-10",
+            "type": "straight",
+            "source": "3",
+            "target": "10",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e4-64",
+            "type": "straight",
+            "source": "4",
+            "target": "64",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e4-7",
+            "type": "straight",
+            "source": "4",
+            "target": "7",
+            "label": "54.36 MB"
+        },
+        {
+            "id": "e4-1",
+            "type": "straight",
+            "source": "4",
+            "target": "1",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e4-0",
+            "type": "straight",
+            "source": "4",
+            "target": "0",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e4-65",
+            "type": "straight",
+            "source": "4",
+            "target": "65",
+            "label": "90.12 MB"
+        },
+        {
+            "id": "e4-47",
+            "type": "straight",
+            "source": "4",
+            "target": "47",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e4-20",
+            "type": "straight",
+            "source": "4",
+            "target": "20",
+            "label": "41.48 MB"
+        },
+        {
+            "id": "e4-62",
+            "type": "straight",
+            "source": "4",
+            "target": "62",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e3-43",
+            "type": "straight",
+            "source": "3",
+            "target": "43",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e3-66",
+            "type": "straight",
+            "source": "3",
+            "target": "66",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e3-10",
+            "type": "straight",
+            "source": "3",
+            "target": "10",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e9-43",
+            "type": "straight",
+            "source": "9",
+            "target": "43",
+            "label": "11.44 MB"
+        },
+        {
+            "id": "e9-72",
+            "type": "straight",
+            "source": "9",
+            "target": "72",
+            "label": "77.25 MB"
+        },
+        {
+            "id": "e9-44",
+            "type": "straight",
+            "source": "9",
+            "target": "44",
+            "label": "40.05 MB"
+        },
+        {
+            "id": "e9-70",
+            "type": "straight",
+            "source": "9",
+            "target": "70",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e9-23",
+            "type": "straight",
+            "source": "9",
+            "target": "23",
+            "label": "37.19 MB"
+        },
+        {
+            "id": "e9-47",
+            "type": "straight",
+            "source": "9",
+            "target": "47",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e9-67",
+            "type": "straight",
+            "source": "9",
+            "target": "67",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e9-48",
+            "type": "straight",
+            "source": "9",
+            "target": "48",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e9-11",
+            "type": "straight",
+            "source": "9",
+            "target": "11",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e3-1",
+            "type": "straight",
+            "source": "3",
+            "target": "1",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e3-72",
+            "type": "straight",
+            "source": "3",
+            "target": "72",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e3-17",
+            "type": "straight",
+            "source": "3",
+            "target": "17",
+            "label": "41.48 MB"
+        },
+        {
+            "id": "e4-71",
+            "type": "straight",
+            "source": "4",
+            "target": "71",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e4-41",
+            "type": "straight",
+            "source": "4",
+            "target": "41",
+            "label": "57.22 MB"
+        },
+        {
+            "id": "e4-75",
+            "type": "straight",
+            "source": "4",
+            "target": "75",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e4-3",
+            "type": "straight",
+            "source": "4",
+            "target": "3",
+            "label": "94.41 MB"
+        },
+        {
+            "id": "e3-0",
+            "type": "straight",
+            "source": "3",
+            "target": "0",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e3-49",
+            "type": "straight",
+            "source": "3",
+            "target": "49",
+            "label": "38.62 MB"
+        },
+        {
+            "id": "e3-5",
+            "type": "straight",
+            "source": "3",
+            "target": "5",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e6-64",
+            "type": "straight",
+            "source": "6",
+            "target": "64",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e6-2",
+            "type": "straight",
+            "source": "6",
+            "target": "2",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e6-19",
+            "type": "straight",
+            "source": "6",
+            "target": "19",
+            "label": "37.19 MB"
+        },
+        {
+            "id": "e6-37",
+            "type": "straight",
+            "source": "6",
+            "target": "37",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e6-29",
+            "type": "straight",
+            "source": "6",
+            "target": "29",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e6-6",
+            "type": "straight",
+            "source": "6",
+            "target": "6",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e2-76",
+            "type": "straight",
+            "source": "2",
+            "target": "76",
+            "label": "32.90 MB"
+        },
+        {
+            "id": "e2-9",
+            "type": "straight",
+            "source": "2",
+            "target": "9",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e2-79",
+            "type": "straight",
+            "source": "2",
+            "target": "79",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e2-11",
+            "type": "straight",
+            "source": "2",
+            "target": "11",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e7-29",
+            "type": "straight",
+            "source": "7",
+            "target": "29",
+            "label": "82.97 MB"
+        },
+        {
+            "id": "e7-44",
+            "type": "straight",
+            "source": "7",
+            "target": "44",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e7-68",
+            "type": "straight",
+            "source": "7",
+            "target": "68",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e7-50",
+            "type": "straight",
+            "source": "7",
+            "target": "50",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e7-38",
+            "type": "straight",
+            "source": "7",
+            "target": "38",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e7-30",
+            "type": "straight",
+            "source": "7",
+            "target": "30",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e7-13",
+            "type": "straight",
+            "source": "7",
+            "target": "13",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e7-63",
+            "type": "straight",
+            "source": "7",
+            "target": "63",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e7-48",
+            "type": "straight",
+            "source": "7",
+            "target": "48",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e7-43",
+            "type": "straight",
+            "source": "7",
+            "target": "43",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e7-69",
+            "type": "straight",
+            "source": "7",
+            "target": "69",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e7-39",
+            "type": "straight",
+            "source": "7",
+            "target": "39",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e7-31",
+            "type": "straight",
+            "source": "7",
+            "target": "31",
+            "label": "17.17 MB"
+        },
+        {
+            "id": "e7-14",
+            "type": "straight",
+            "source": "7",
+            "target": "14",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e5-33",
+            "type": "straight",
+            "source": "5",
+            "target": "33",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e5-70",
+            "type": "straight",
+            "source": "5",
+            "target": "70",
+            "label": "10.01 MB"
+        },
+        {
+            "id": "e5-51",
+            "type": "straight",
+            "source": "5",
+            "target": "51",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e5-32",
+            "type": "straight",
+            "source": "5",
+            "target": "32",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e5-15",
+            "type": "straight",
+            "source": "5",
+            "target": "15",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e7-9",
+            "type": "straight",
+            "source": "7",
+            "target": "9",
+            "label": "22.89 MB"
+        },
+        {
+            "id": "e7-13",
+            "type": "straight",
+            "source": "7",
+            "target": "13",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e7-26",
+            "type": "straight",
+            "source": "7",
+            "target": "26",
+            "label": "82.97 MB"
+        },
+        {
+            "id": "e7-41",
+            "type": "straight",
+            "source": "7",
+            "target": "41",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e7-71",
+            "type": "straight",
+            "source": "7",
+            "target": "71",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e7-52",
+            "type": "straight",
+            "source": "7",
+            "target": "52",
+            "label": "28.61 MB"
+        },
+        {
+            "id": "e7-23",
+            "type": "straight",
+            "source": "7",
+            "target": "23",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e2-2",
+            "type": "straight",
+            "source": "2",
+            "target": "2",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e2-26",
+            "type": "straight",
+            "source": "2",
+            "target": "26",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e3-46",
+            "type": "straight",
+            "source": "3",
+            "target": "46",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-40",
+            "type": "straight",
+            "source": "3",
+            "target": "40",
+            "label": "50.07 MB"
+        },
+        {
+            "id": "e3-27",
+            "type": "straight",
+            "source": "3",
+            "target": "27",
+            "label": "17.17 MB"
+        },
+        {
+            "id": "e3-33",
+            "type": "straight",
+            "source": "3",
+            "target": "33",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e3-4",
+            "type": "straight",
+            "source": "3",
+            "target": "4",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e3-28",
+            "type": "straight",
+            "source": "3",
+            "target": "28",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e6-32",
+            "type": "straight",
+            "source": "6",
+            "target": "32",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e6-4",
+            "type": "straight",
+            "source": "6",
+            "target": "4",
+            "label": "25.75 MB"
+        },
+        {
+            "id": "e6-64",
+            "type": "straight",
+            "source": "6",
+            "target": "64",
+            "label": "38.62 MB"
+        },
+        {
+            "id": "e6-28",
+            "type": "straight",
+            "source": "6",
+            "target": "28",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e6-72",
+            "type": "straight",
+            "source": "6",
+            "target": "72",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e6-62",
+            "type": "straight",
+            "source": "6",
+            "target": "62",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e2-6",
+            "type": "straight",
+            "source": "2",
+            "target": "6",
+            "label": "28.61 MB"
+        },
+        {
+            "id": "e2-2",
+            "type": "straight",
+            "source": "2",
+            "target": "2",
+            "label": "82.97 MB"
+        },
+        {
+            "id": "e3-73",
+            "type": "straight",
+            "source": "3",
+            "target": "73",
+            "label": "94.41 MB"
+        },
+        {
+            "id": "e3-53",
+            "type": "straight",
+            "source": "3",
+            "target": "53",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e3-6",
+            "type": "straight",
+            "source": "3",
+            "target": "6",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e5-38",
+            "type": "straight",
+            "source": "5",
+            "target": "38",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e5-45",
+            "type": "straight",
+            "source": "5",
+            "target": "45",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e5-74",
+            "type": "straight",
+            "source": "5",
+            "target": "74",
+            "label": "90.12 MB"
+        },
+        {
+            "id": "e5-41",
+            "type": "straight",
+            "source": "5",
+            "target": "41",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e5-14",
+            "type": "straight",
+            "source": "5",
+            "target": "14",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-46",
+            "type": "straight",
+            "source": "3",
+            "target": "46",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e3-14",
+            "type": "straight",
+            "source": "3",
+            "target": "14",
+            "label": "55.79 MB"
+        },
+        {
+            "id": "e3-23",
+            "type": "straight",
+            "source": "3",
+            "target": "23",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e4-36",
+            "type": "straight",
+            "source": "4",
+            "target": "36",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e4-65",
+            "type": "straight",
+            "source": "4",
+            "target": "65",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e4-75",
+            "type": "straight",
+            "source": "4",
+            "target": "75",
+            "label": "60.08 MB"
+        },
+        {
+            "id": "e4-26",
+            "type": "straight",
+            "source": "4",
+            "target": "26",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e4-67",
+            "type": "straight",
+            "source": "4",
+            "target": "67",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e4-48",
+            "type": "straight",
+            "source": "4",
+            "target": "48",
+            "label": "24.32 MB"
+        },
+        {
+            "id": "e4-42",
+            "type": "straight",
+            "source": "4",
+            "target": "42",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e4-27",
+            "type": "straight",
+            "source": "4",
+            "target": "27",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e3-7",
+            "type": "straight",
+            "source": "3",
+            "target": "7",
+            "label": "54.36 MB"
+        },
+        {
+            "id": "e3-76",
+            "type": "straight",
+            "source": "3",
+            "target": "76",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e3-31",
+            "type": "straight",
+            "source": "3",
+            "target": "31",
+            "label": "50.07 MB"
+        },
+        {
+            "id": "e6-21",
+            "type": "straight",
+            "source": "6",
+            "target": "21",
+            "label": "57.22 MB"
+        },
+        {
+            "id": "e6-29",
+            "type": "straight",
+            "source": "6",
+            "target": "29",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e6-46",
+            "type": "straight",
+            "source": "6",
+            "target": "46",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e6-49",
+            "type": "straight",
+            "source": "6",
+            "target": "49",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e6-43",
+            "type": "straight",
+            "source": "6",
+            "target": "43",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e6-36",
+            "type": "straight",
+            "source": "6",
+            "target": "36",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e2-15",
+            "type": "straight",
+            "source": "2",
+            "target": "15",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e2-39",
+            "type": "straight",
+            "source": "2",
+            "target": "39",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e5-19",
+            "type": "straight",
+            "source": "5",
+            "target": "19",
+            "label": "11.44 MB"
+        },
+        {
+            "id": "e5-27",
+            "type": "straight",
+            "source": "5",
+            "target": "27",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e5-66",
+            "type": "straight",
+            "source": "5",
+            "target": "66",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e5-18",
+            "type": "straight",
+            "source": "5",
+            "target": "18",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e5-41",
+            "type": "straight",
+            "source": "5",
+            "target": "41",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e4-19",
+            "type": "straight",
+            "source": "4",
+            "target": "19",
+            "label": "40.05 MB"
+        },
+        {
+            "id": "e4-69",
+            "type": "straight",
+            "source": "4",
+            "target": "69",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e4-26",
+            "type": "straight",
+            "source": "4",
+            "target": "26",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e4-1",
+            "type": "straight",
+            "source": "4",
+            "target": "1",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e3-50",
+            "type": "straight",
+            "source": "3",
+            "target": "50",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e3-36",
+            "type": "straight",
+            "source": "3",
+            "target": "36",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e3-3",
+            "type": "straight",
+            "source": "3",
+            "target": "3",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e7-52",
+            "type": "straight",
+            "source": "7",
+            "target": "52",
+            "label": "71.53 MB"
+        },
+        {
+            "id": "e7-50",
+            "type": "straight",
+            "source": "7",
+            "target": "50",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e7-31",
+            "type": "straight",
+            "source": "7",
+            "target": "31",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e7-53",
+            "type": "straight",
+            "source": "7",
+            "target": "53",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e7-41",
+            "type": "straight",
+            "source": "7",
+            "target": "41",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e7-37",
+            "type": "straight",
+            "source": "7",
+            "target": "37",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e7-14",
+            "type": "straight",
+            "source": "7",
+            "target": "14",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e5-53",
+            "type": "straight",
+            "source": "5",
+            "target": "53",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e5-65",
+            "type": "straight",
+            "source": "5",
+            "target": "65",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e5-19",
+            "type": "straight",
+            "source": "5",
+            "target": "19",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e5-54",
+            "type": "straight",
+            "source": "5",
+            "target": "54",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e5-17",
+            "type": "straight",
+            "source": "5",
+            "target": "17",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e4-69",
+            "type": "straight",
+            "source": "4",
+            "target": "69",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e4-27",
+            "type": "straight",
+            "source": "4",
+            "target": "27",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e4-39",
+            "type": "straight",
+            "source": "4",
+            "target": "39",
+            "label": "24.32 MB"
+        },
+        {
+            "id": "e4-19",
+            "type": "straight",
+            "source": "4",
+            "target": "19",
+            "label": "78.68 MB"
+        },
+        {
+            "id": "e5-1",
+            "type": "straight",
+            "source": "5",
+            "target": "1",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e5-0",
+            "type": "straight",
+            "source": "5",
+            "target": "0",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e5-52",
+            "type": "straight",
+            "source": "5",
+            "target": "52",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e5-41",
+            "type": "straight",
+            "source": "5",
+            "target": "41",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e5-22",
+            "type": "straight",
+            "source": "5",
+            "target": "22",
+            "label": "38.62 MB"
+        },
+        {
+            "id": "e3-46",
+            "type": "straight",
+            "source": "3",
+            "target": "46",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e3-45",
+            "type": "straight",
+            "source": "3",
+            "target": "45",
+            "label": "20.03 MB"
+        },
+        {
+            "id": "e3-26",
+            "type": "straight",
+            "source": "3",
+            "target": "26",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e3-69",
+            "type": "straight",
+            "source": "3",
+            "target": "69",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-55",
+            "type": "straight",
+            "source": "3",
+            "target": "55",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-28",
+            "type": "straight",
+            "source": "3",
+            "target": "28",
+            "label": "62.94 MB"
+        },
+        {
+            "id": "e5-46",
+            "type": "straight",
+            "source": "5",
+            "target": "46",
+            "label": "71.53 MB"
+        },
+        {
+            "id": "e5-61",
+            "type": "straight",
+            "source": "5",
+            "target": "61",
+            "label": "55.79 MB"
+        },
+        {
+            "id": "e5-54",
+            "type": "straight",
+            "source": "5",
+            "target": "54",
+            "label": "75.82 MB"
+        },
+        {
+            "id": "e5-49",
+            "type": "straight",
+            "source": "5",
+            "target": "49",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e5-29",
+            "type": "straight",
+            "source": "5",
+            "target": "29",
+            "label": "28.61 MB"
+        },
+        {
+            "id": "e4-47",
+            "type": "straight",
+            "source": "4",
+            "target": "47",
+            "label": "18.60 MB"
+        },
+        {
+            "id": "e4-46",
+            "type": "straight",
+            "source": "4",
+            "target": "46",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e4-56",
+            "type": "straight",
+            "source": "4",
+            "target": "56",
+            "label": "71.53 MB"
+        },
+        {
+            "id": "e4-35",
+            "type": "straight",
+            "source": "4",
+            "target": "35",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e4-70",
+            "type": "straight",
+            "source": "4",
+            "target": "70",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e4-55",
+            "type": "straight",
+            "source": "4",
+            "target": "55",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e4-52",
+            "type": "straight",
+            "source": "4",
+            "target": "52",
+            "label": "75.82 MB"
+        },
+        {
+            "id": "e4-47",
+            "type": "straight",
+            "source": "4",
+            "target": "47",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e2-54",
+            "type": "straight",
+            "source": "2",
+            "target": "54",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e2-51",
+            "type": "straight",
+            "source": "2",
+            "target": "51",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-70",
+            "type": "straight",
+            "source": "3",
+            "target": "70",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e3-59",
+            "type": "straight",
+            "source": "3",
+            "target": "59",
+            "label": "64.37 MB"
+        },
+        {
+            "id": "e3-53",
+            "type": "straight",
+            "source": "3",
+            "target": "53",
+            "label": "71.53 MB"
+        },
+        {
+            "id": "e2-77",
+            "type": "straight",
+            "source": "2",
+            "target": "77",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e2-0",
+            "type": "straight",
+            "source": "2",
+            "target": "0",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e2-62",
+            "type": "straight",
+            "source": "2",
+            "target": "62",
+            "label": "50.07 MB"
+        },
+        {
+            "id": "e2-4",
+            "type": "straight",
+            "source": "2",
+            "target": "4",
+            "label": "27.18 MB"
+        },
+        {
+            "id": "e2-56",
+            "type": "straight",
+            "source": "2",
+            "target": "56",
+            "label": "64.37 MB"
+        },
+        {
+            "id": "e2-6",
+            "type": "straight",
+            "source": "2",
+            "target": "6",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e4-2",
+            "type": "straight",
+            "source": "4",
+            "target": "2",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e4-65",
+            "type": "straight",
+            "source": "4",
+            "target": "65",
+            "label": "57.22 MB"
+        },
+        {
+            "id": "e4-78",
+            "type": "straight",
+            "source": "4",
+            "target": "78",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e4-9",
+            "type": "straight",
+            "source": "4",
+            "target": "9",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e4-73",
+            "type": "straight",
+            "source": "4",
+            "target": "73",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e4-52",
+            "type": "straight",
+            "source": "4",
+            "target": "52",
+            "label": "55.79 MB"
+        },
+        {
+            "id": "e4-63",
+            "type": "straight",
+            "source": "4",
+            "target": "63",
+            "label": "11.44 MB"
+        },
+        {
+            "id": "e4-10",
+            "type": "straight",
+            "source": "4",
+            "target": "10",
+            "label": "72.96 MB"
+        },
+        {
+            "id": "e6-72",
+            "type": "straight",
+            "source": "6",
+            "target": "72",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e6-58",
+            "type": "straight",
+            "source": "6",
+            "target": "58",
+            "label": "50.07 MB"
+        },
+        {
+            "id": "e6-33",
+            "type": "straight",
+            "source": "6",
+            "target": "33",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e6-17",
+            "type": "straight",
+            "source": "6",
+            "target": "17",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e6-2",
+            "type": "straight",
+            "source": "6",
+            "target": "2",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e6-0",
+            "type": "straight",
+            "source": "6",
+            "target": "0",
+            "label": "64.37 MB"
+        },
+        {
+            "id": "e3-27",
+            "type": "straight",
+            "source": "3",
+            "target": "27",
+            "label": "84.40 MB"
+        },
+        {
+            "id": "e3-61",
+            "type": "straight",
+            "source": "3",
+            "target": "61",
+            "label": "11.44 MB"
+        },
+        {
+            "id": "e3-12",
+            "type": "straight",
+            "source": "3",
+            "target": "12",
+            "label": "88.69 MB"
+        },
+        {
+            "id": "e4-23",
+            "type": "straight",
+            "source": "4",
+            "target": "23",
+            "label": "70.10 MB"
+        },
+        {
+            "id": "e4-33",
+            "type": "straight",
+            "source": "4",
+            "target": "33",
+            "label": "38.62 MB"
+        },
+        {
+            "id": "e4-70",
+            "type": "straight",
+            "source": "4",
+            "target": "70",
+            "label": "67.23 MB"
+        },
+        {
+            "id": "e4-16",
+            "type": "straight",
+            "source": "4",
+            "target": "16",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e6-71",
+            "type": "straight",
+            "source": "6",
+            "target": "71",
+            "label": "74.39 MB"
+        },
+        {
+            "id": "e6-47",
+            "type": "straight",
+            "source": "6",
+            "target": "47",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e6-38",
+            "type": "straight",
+            "source": "6",
+            "target": "38",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e6-60",
+            "type": "straight",
+            "source": "6",
+            "target": "60",
+            "label": "57.22 MB"
+        },
+        {
+            "id": "e6-79",
+            "type": "straight",
+            "source": "6",
+            "target": "79",
+            "label": "90.12 MB"
+        },
+        {
+            "id": "e6-17",
+            "type": "straight",
+            "source": "6",
+            "target": "17",
+            "label": "90.12 MB"
+        },
+        {
+            "id": "e3-43",
+            "type": "straight",
+            "source": "3",
+            "target": "43",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e3-72",
+            "type": "straight",
+            "source": "3",
+            "target": "72",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e3-18",
+            "type": "straight",
+            "source": "3",
+            "target": "18",
+            "label": "51.50 MB"
+        },
+        {
+            "id": "e3-39",
+            "type": "straight",
+            "source": "3",
+            "target": "39",
+            "label": "12.87 MB"
+        },
+        {
+            "id": "e3-73",
+            "type": "straight",
+            "source": "3",
+            "target": "73",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e3-19",
+            "type": "straight",
+            "source": "3",
+            "target": "19",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-14",
+            "type": "straight",
+            "source": "3",
+            "target": "14",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e3-74",
+            "type": "straight",
+            "source": "3",
+            "target": "74",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e3-26",
+            "type": "straight",
+            "source": "3",
+            "target": "26",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e5-48",
+            "type": "straight",
+            "source": "5",
+            "target": "48",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e5-51",
+            "type": "straight",
+            "source": "5",
+            "target": "51",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e5-44",
+            "type": "straight",
+            "source": "5",
+            "target": "44",
+            "label": "35.76 MB"
+        },
+        {
+            "id": "e5-1",
+            "type": "straight",
+            "source": "5",
+            "target": "1",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e5-27",
+            "type": "straight",
+            "source": "5",
+            "target": "27",
+            "label": "87.26 MB"
+        },
+        {
+            "id": "e6-19",
+            "type": "straight",
+            "source": "6",
+            "target": "19",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e6-54",
+            "type": "straight",
+            "source": "6",
+            "target": "54",
+            "label": "61.51 MB"
+        },
+        {
+            "id": "e6-56",
+            "type": "straight",
+            "source": "6",
+            "target": "56",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e6-64",
+            "type": "straight",
+            "source": "6",
+            "target": "64",
+            "label": "67.23 MB"
+        },
+        {
+            "id": "e6-7",
+            "type": "straight",
+            "source": "6",
+            "target": "7",
+            "label": "42.92 MB"
+        },
+        {
+            "id": "e6-28",
+            "type": "straight",
+            "source": "6",
+            "target": "28",
+            "label": "10.01 MB"
+        },
+        {
+            "id": "e4-65",
+            "type": "straight",
+            "source": "4",
+            "target": "65",
+            "label": "74.39 MB"
+        },
+        {
+            "id": "e4-21",
+            "type": "straight",
+            "source": "4",
+            "target": "21",
+            "label": "65.80 MB"
+        },
+        {
+            "id": "e4-8",
+            "type": "straight",
+            "source": "4",
+            "target": "8",
+            "label": "75.82 MB"
+        },
+        {
+            "id": "e4-29",
+            "type": "straight",
+            "source": "4",
+            "target": "29",
+            "label": "30.04 MB"
+        },
+        {
+            "id": "e5-19",
+            "type": "straight",
+            "source": "5",
+            "target": "19",
+            "label": "77.25 MB"
+        },
+        {
+            "id": "e5-62",
+            "type": "straight",
+            "source": "5",
+            "target": "62",
+            "label": "21.46 MB"
+        },
+        {
+            "id": "e5-66",
+            "type": "straight",
+            "source": "5",
+            "target": "66",
+            "label": "85.83 MB"
+        },
+        {
+            "id": "e5-20",
+            "type": "straight",
+            "source": "5",
+            "target": "20",
+            "label": "14.31 MB"
+        },
+        {
+            "id": "e5-33",
+            "type": "straight",
+            "source": "5",
+            "target": "33",
+            "label": "15.74 MB"
+        },
+        {
+            "id": "e3-61",
+            "type": "straight",
+            "source": "3",
+            "target": "61",
+            "label": "68.66 MB"
+        },
+        {
+            "id": "e3-67",
+            "type": "straight",
+            "source": "3",
+            "target": "67",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e3-35",
+            "type": "straight",
+            "source": "3",
+            "target": "35",
+            "label": "94.41 MB"
+        },
+        {
+            "id": "e2-68",
+            "type": "straight",
+            "source": "2",
+            "target": "68",
+            "label": "91.55 MB"
+        },
+        {
+            "id": "e2-36",
+            "type": "straight",
+            "source": "2",
+            "target": "36",
+            "label": "90.12 MB"
+        },
+        {
+            "id": "e2-21",
+            "type": "straight",
+            "source": "2",
+            "target": "21",
+            "label": "80.11 MB"
+        },
+        {
+            "id": "e2-38",
+            "type": "straight",
+            "source": "2",
+            "target": "38",
+            "label": "60.08 MB"
+        },
+        {
+            "id": "e2-24",
+            "type": "straight",
+            "source": "2",
+            "target": "24",
+            "label": "32.90 MB"
+        },
+        {
+            "id": "e2-40",
+            "type": "straight",
+            "source": "2",
+            "target": "40",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e2-3",
+            "type": "straight",
+            "source": "2",
+            "target": "3",
+            "label": "34.33 MB"
+        },
+        {
+            "id": "e2-57",
+            "type": "straight",
+            "source": "2",
+            "target": "57",
+            "label": "81.54 MB"
+        },
+        {
+            "id": "e2-5",
+            "type": "straight",
+            "source": "2",
+            "target": "5",
+            "label": "74.39 MB"
+        },
+        {
+            "id": "e2-60",
+            "type": "straight",
+            "source": "2",
+            "target": "60",
+            "label": "58.65 MB"
+        },
+        {
+            "id": "e2-25",
+            "type": "straight",
+            "source": "2",
+            "target": "25",
+            "label": "45.78 MB"
+        },
+        {
+            "id": "e2-65",
+            "type": "straight",
+            "source": "2",
+            "target": "65",
+            "label": "90.12 MB"
+        }
+    ],
+    "sourceNode": 1
+}
