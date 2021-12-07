@@ -22,6 +22,8 @@ const inputParser = (inputContents) => {
 
 	let inputStageFlag = -1;
 	let linesOfEdgesParsed = 0;
+	const edgesCreated = {};
+	const alpha = "abcdefghijklmnopqrstuvwxz".split('');
 
 	for (let firstParse of (inputContents.split(/\n/g))) {
 		firstParse = (firstParse.split(/\s/g)).filter((item) => item.replace(/\s/g, '').length > 0);
@@ -50,10 +52,12 @@ const inputParser = (inputContents) => {
 			}
 
 			inputJSON.nodes.push({
-				id: firstParse[0],
-				position: {
-					x: parseFloat(firstParse[1]),
-					y: parseFloat(firstParse[2])
+				data: {
+					id: firstParse[0],
+					position: {
+						x: parseFloat(firstParse[1]) * 1000,
+						y: parseFloat(firstParse[2] * 1000)
+					}
 				}
 			});
 
@@ -73,12 +77,26 @@ const inputParser = (inputContents) => {
 				const edgeDestNode = firstParse[i];
 				const edgeWeight = firstParse[i + 2]; // Bandwidth only
 
+				let edgeId = `e${edgeSourceNode}-${edgeDestNode}`;
+				let j = 0;
+				while (edgesCreated[edgeId]) {
+					if(edgesCreated[`${edgeId}${alpha[j]}`]) {
+						j++;
+						continue;
+					}
+					edgeId = `${edgeId}${alpha[j]}`;
+					break;
+				}
+				edgesCreated[edgeId] = true;
+
+
 				inputJSON.edges.push({
-					id: `e${edgeSourceNode}-${edgeDestNode}`,
-					type: 'straight',
-					source: edgeSourceNode,
-					target: edgeDestNode,
-					label: `${bytesToMB(edgeWeight).toFixed(2)} MB`
+					data: {
+						id: edgeId,
+						source: edgeSourceNode,
+						target: edgeDestNode,
+						weight: `${bytesToMB(edgeWeight).toFixed(2)} MB`
+					}
 				});
 			}
 
