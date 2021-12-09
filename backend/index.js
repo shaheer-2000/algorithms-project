@@ -1,9 +1,12 @@
 const { existsSync, readdirSync, mkdirSync } = require('fs');
 const { resolve } = require('path');
+const morgan = require('morgan');
+
+morgan('tiny');
 
 const app = require('./src/server');
 
-const PORT = process.env.PORT || 8000;
+const PORT = 8001;
 
 const main = () => {
 	if (!existsSync(resolve(__dirname, './data/parsed'))) {
