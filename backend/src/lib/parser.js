@@ -22,6 +22,7 @@ const inputParser = (inputContents) => {
 
 	let inputStageFlag = -1;
 	let linesOfEdgesParsed = 0;
+	let nodeNum = 0;
 	const edgesCreated = {};
 	const alpha = "abcdefghijklmnopqrstuvwxz".split('');
 
@@ -70,7 +71,7 @@ const inputParser = (inputContents) => {
 				inputStageFlag = 3;
 			}
 
-			const edgeSourceNode = firstParse[0];
+			const edgeSourceNode = nodeNum;
 			// console.log(secondParse);
 			
 			for (let i = 1; i < firstParse.length; i += 4) {
@@ -100,6 +101,7 @@ const inputParser = (inputContents) => {
 				});
 			}
 
+			nodeNum++;
 			linesOfEdgesParsed++;
 			continue;
 		}
