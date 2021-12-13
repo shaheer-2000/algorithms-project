@@ -1,9 +1,11 @@
 const express = require('express');
 const cors = require('cors');
+const morgan = require('morgan');
 const app = express();
 
 const { resolve } = require('path');
 
+app.use(morgan('tiny'));
 app.use(cors());
 app.use(express.json());
 
@@ -13,7 +15,7 @@ app.get('/inputs/:numOfNodes', (req, res) => {
 
 app.get('/algorithms/prims/:numOfNodes', (req, res) => {
 	const GraphBuilder = require('./lib/graph-builder');
-	const Prims = require('.algorithms/Prims');
+	const Prims = require('./algorithms/Prims');
 	const tenNodeGraph = new GraphBuilder('input10.json');
 	const prims = new Prims(tenNodeGraph.graph);
 	

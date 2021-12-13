@@ -55,10 +55,10 @@ const inputParser = (inputContents) => {
 			inputJSON.nodes.push({
 				data: {
 					id: firstParse[0],
-					position: {
-						x: parseFloat(firstParse[1]) * 1000,
-						y: parseFloat(firstParse[2] * 1000)
-					}
+				},
+				position: {
+					x: parseFloat(firstParse[1]) * 1000,
+					y: parseFloat(firstParse[2] * 1000)
 				}
 			});
 
