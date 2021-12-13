@@ -1,29 +1,62 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const app = express();
 
-const { resolve } = require('path');
+const GraphBuilder = require('./lib/graph-builder');
+const Prims = require('./algorithms/Prims');
+
+const app = express();
 
 app.use(morgan('tiny'));
 app.use(cors());
 app.use(express.json());
 
-app.get('/inputs/:numOfNodes', (req, res) => {
-	res.json(require(resolve(__dirname, '../data/parsed', `input${req.params.numOfNodes}.json`)));
-});
+module.exports = (parsedInputs) => {
+	const graphs = {};
 
-app.get('/algorithms/prims/:numOfNodes', (req, res) => {
-	const GraphBuilder = require('./lib/graph-builder');
-	const Prims = require('./algorithms/Prims');
-	const tenNodeGraph = new GraphBuilder('input10.json');
-	const prims = new Prims(tenNodeGraph.graph);
-	
-	const mst = prims.findMST(1);
-	
-	const originalInput = require(resolve(__dirname, '../data/parsed', 'input10.json'));
-	originalInput.edges = mst.edges;
-	res.json(originalInput);
-});
+	for (let parsedInput of parsedInputs) {
+		graphs[parseInt(parsedInput.split('.').shift().replace('input', ''), 10)] = {
+			base: new GraphBuilder(parsedInput)
+		};
+	}
 
-module.exports = app;
+	app.get('/inputs/:numOfNodes', (req, res) => {
+		const numOfNodes = req.params.numOfNodes;
+		if (!graphs[numOfNodes] || !graphs[numOfNodes].base) {
+			res.status(404).send({
+				error: 'Invalid input requested'
+			});
+
+			return;
+		}
+
+		res.json(graphs[numOfNodes].base.inputJSON);
+	});
+
+	app.get('/algorithms/prims/:numOfNodes', (req, res) => {
+		const numOfNodes = req.params.numOfNodes;
+		if (!graphs[numOfNodes] || !graphs[numOfNodes].base) {
+			res.status(404).send({
+				error: 'Invalid input requested'
+			});
+
+			return;
+		}
+
+		if (!graphs[numOfNodes].prims) {
+			const prims = new Prims(graphs[numOfNodes].base.graph);
+			const baseGraph = {
+				...graphs[numOfNodes].base.inputJSON
+			};
+
+			const maxSpanningTree = prims.findMST(graphs[numOfNodes].base.inputJSON.sourceNode);
+			baseGraph.edges = maxSpanningTree.edges;
+
+			graphs[numOfNodes].prims = baseGraph;
+		}
+
+		res.json(graphs[numOfNodes].prims);
+	});
+
+	return app;
+};

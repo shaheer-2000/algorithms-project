@@ -23,7 +23,7 @@ const main = () => {
 		console.log('[INFO] Inputs parsed');
 	}
 
-	app.listen(PORT, () => {
+	app(parsedInputs).listen(PORT, () => {
 		console.log(`Server listening on port: ${PORT}`);
 	});
 };
