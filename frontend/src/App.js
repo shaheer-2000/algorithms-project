@@ -5,57 +5,10 @@ import IndexPage from './Components/Pages/IndexPage';
 import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
+import Skeleton from '@mui/material/Skeleton';
 
-// const elements = {
-// 	nodes: [
-// 		{
-// 			data: {
-// 				id: 'a',
-// 			},
-// 			position: {
-// 				x: 360,
-// 				y: 44
-// 			},
-
-// 		},
-// 		{
-// 			data: {
-// 				id: 'b',
-// 			},
-// 			position: {
-// 				x: 700,
-// 				y: 34
-// 			}
-// 		},
-// 		{
-// 			data: {
-// 				id: 'c',
-// 			},
-// 			position: {
-// 				x: 15,
-// 				y: 60
-// 			}
-// 		},
-// 	],
-// 	edges: [
-// 		{
-// 			data: {
-// 				id: 'ab',
-// 				source: 'a',
-// 				target: 'b',
-// 				weight: '3'
-// 			}
-// 		},
-// 		{
-// 			data: {
-// 				id: 'abc',
-// 				source: 'a',
-// 				target: 'b',
-// 				weight: '5'
-// 			}
-// 		}
-// 	],
-// };
+const GRAPH_WIDTH = "75vw";
+const GRAPH_HEIGHT = "80vh";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,145 +19,196 @@ const useStyles = makeStyles((theme) => ({
   },
   tabs: {
     width: "200px"
+  },
+  graphLoader: {
+    minHeight: GRAPH_HEIGHT,
+    minWidth: GRAPH_WIDTH
+  },
+  mainContainer: {
+    display: "flex", 
+    flexDirection: "column", 
+    flexWrap: "wrap", 
+    height: "400px", 
+    alignItems: "flex-start", 
+    justifyContent: "flex-start"
   }
 }));
 
-const useStyles2 = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    flexGrow: 1,
-  },
-}));
+const nodeCounts = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const algorithms = ['prims', 'kruskal', 'dijkstra', 'bellman-ford', 'floyd-warshall', 'clustering-coefficient', 'boruvka'];
+
+const URL = 'http://localhost:8001';
+
+const DEFAULT_NODE_COUNT = 10;
+const DEFAULT_ALGORITHM = false;
 
 function App() {
-  const [input, setinput] = useState(10);
-  const [algo, setalgo] = useState();
-  const [elements, setElements] = useState({});
-  // const inputTypes = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+  const [nodeCount, setNodeCount] = useState(DEFAULT_NODE_COUNT);
+  const [algorithm, setAlgorithm] = useState(DEFAULT_ALGORITHM)
+  const [currentGraphData, setCurrentGraphData] = useState({});
+  const [isLoading, setIsLoading] = useState(false);
 
   const classes = useStyles();
-  const classes2 = useStyles2();
-  const [value, setValue] = useState(0);
-  const [value2, setValue2] = useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-    console.log(value);
-  };
-  const handleChange2 = (event, newValue) => {
-    setValue2(newValue);
-    console.log(value2);
-  };
 
   useEffect(() => {
     (async () => {
-      const res = await axios.get(`http://163.47.9.21:8001/inputs/${(value+1)*10}`);
-      setElements((elements) => ({
+      setIsLoading((isLoading) => true);
+
+      for (let n of nodeCounts) {
+        let res = localStorage.getItem(n);
+        if (!res) {
+          res = await axios.get(`${URL}/inputs/${n}`);
+
+          res = {
+            nodes: [
+              ...res.data.nodes
+            ],
+            edges: [
+              ...res.data.edges
+            ]
+          };
+
+          localStorage.setItem(n, JSON.stringify(res));
+        } else {
+          res = JSON.parse(res);
+        }
+
+        if (n === DEFAULT_NODE_COUNT) {
+          setCurrentGraphData((currentGraphData) => ({
+            nodes: res.nodes,
+            edges: res.edges
+          }));
+        }
+      }
+
+      setIsLoading((isLoading) => false);
+    })();
+  }, []);
+
+  const handleNodeCountTab = (e, v) => {
+    setIsLoading(true);
+    setCurrentGraphData((currentGraphData) => JSON.parse(localStorage.getItem(v)));
+    setNodeCount(v);
+    // reset algorithm to remove indicator from tab
+    setAlgorithm(DEFAULT_ALGORITHM);
+    setIsLoading(false);
+  };
+
+  const handleAlgorithmTab = async (e, v) => {
+    setIsLoading(true);
+    const algoResultId = `${nodeCount}-${v}`;
+    let res = localStorage.getItem(algoResultId);
+    if (!res) {
+      res = await axios.get(`${URL}/algorithms/${v}/${nodeCount}`);
+      // TODO: check how clustering-coeff and boruvka work
+      res = {
         nodes: [
-          ...(res.data.nodes.map((node) => ({
-            data: {
-              id: node.data.id,
-            },   
-            position: {
-              x: node.data.position.x,
-              y: node.data.position.y
-            }
-          })))
+          ...res.data.nodes
         ],
         edges: [
           ...res.data.edges
         ]
-      }));
-    })();
-  }, [value, value2])
+      };
+
+      localStorage.setItem(algoResultId, JSON.stringify(res));
+    } else {
+      res = JSON.parse(res);
+    }
+
+    // TODO: check how clustering-coeff and boruvka work
+    // have switch here just in case some work differently
+    switch (v) {
+      default:
+      case 'prims':
+        setCurrentGraphData((currentGraphData) => res);
+        break;
+    }
+
+    setAlgorithm(v);
+    setIsLoading(false);
+  };
 
   return (
-    <div style={{display: "flex", flexDirection: "column", flexWrap: "wrap", height: "400px", alignItems: "flex-start", justifyContent: "flex-start"}}>
-      <div style={{width: "200px", marginTop: "65px"}}>
+    <div className={classes.mainContainer}>
+      
+      <div style={{width: "200px", marginTop: "65px" }}>
         <Tabs
+          textColor="secondary"
+          indicatorColor="primary"
           orientation="vertical"
           variant="scrollable"
           scrollButtons="auto"
-          value={value}
-          onChange={handleChange}
-          className={classes.tabs}
+          onChange={handleNodeCountTab}
+          value={nodeCount}
         >
-          <Tab label="Input 10" />
-          <Tab label="Input 20" />
-          <Tab label="Input 30" />
-          <Tab label="Input 40" />
-          <Tab label="Input 50" />
-          <Tab label="Input 60" />
-          <Tab label="Input 70" />
-          <Tab label="Input 80" />
-          <Tab label="Input 90" />
-          <Tab label="Input 100" />
+          { 
+            nodeCounts.map((n) => <Tab label={`Input-${n}`} value={n} />)
+          }
         </Tabs>
       </div>
-      <div style={{width: "900px", marginLeft: "-80px"}}>
+
+      <div style={{width: "900px", marginLeft: '-80px'}}>
         <Tabs
-          value={value2}
-          onChange={handleChange2}
-          indicatorColor="primary"
-          textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
-          className={classes2.tabs}
+          textColor="primary"
+          indicatorColor="secondary"
+          value={algorithm}
+          onChange={handleAlgorithmTab}
         >
-          <Tab label="Prims" />
-          <Tab label="Kruskal" />
-          <Tab label="Dijkstra" />
-          <Tab label="Bellman Ford" />
-          <Tab label="Floyd Warshall" />
-          <Tab label="Clustering Coefficient" />
-          <Tab label="Borůvka" />
-        </Tabs>
-        
-      </div>
-      <div style={{height: "400px", position: "absolute", left: "222px", top: "70px"}}>
-        <Graph 
-          containerId="cy" 
-          containerStyle={
-            {
-              width: '75vw',
-              height: '80vh',
-              display: 'block',
-              border: '1px solid #00c'
-            }
+          { 
+            algorithms.map((a) => <Tab label={a.toUpperCase()} value={a} />)
           }
-          elements={(() => { console.log(elements); return elements; })()}
-          elementStyles={
-            {
-              nodes: {
-                'background-color': '#666',
-                'label': 'data(id)',
-                'text-valign': 'center',
-                'border-style': 'double',
-                "border-color": '#000',
-                "border-width": '3px'
-              },
-              edges: {
-                'width': 3,
-                'line-color': '#ccc',
-                'target-arrow-color': '#ccc',
-                'target-arrow-shape': 'triangle',
-                'curve-style': 'bezier',
-                'label': 'data(weight)'
+        </Tabs>
+      </div>
+
+      <div style={{height: "400px", position: "absolute", left: "222px", top: "70px"}}> 
+        { isLoading ? 
+          <Skeleton variant="rectangular" className={classes.graphLoader} /> : 
+          <Graph 
+            containerId="cy" 
+            containerStyle={
+              {
+                width: GRAPH_WIDTH,
+                height: GRAPH_HEIGHT,
+                display: 'block',
+                border: '1px solid #00c'
               }
             }
-          }
-          cytoscapeSettings={
-            {
-              zoomingEnabled: false,
-              autoLock: true
+            elements={currentGraphData}
+            elementStyles={
+              {
+                nodes: {
+                  'background-color': '#666',
+                  'label': 'data(id)',
+                  'text-valign': 'center',
+                  'border-style': 'double',
+                  "border-color": '#000',
+                  "border-width": '3px'
+                },
+                edges: {
+                  'width': 3,
+                  'line-color': '#ccc',
+                  'target-arrow-color': '#ccc',
+                  'target-arrow-shape': 'triangle',
+                  'curve-style': 'bezier',
+                  'label': 'data(weight)'
+                }
+              }
             }
-          }
-          layoutSettings={
-            {
-              name: 'preset'
+            cytoscapeSettings={
+              {
+                zoomingEnabled: false,
+                autoLock: true
+              }
             }
-          }
-        />
+            layoutSettings={
+              {
+                name: 'preset'
+              }
+            }
+          />
+        }
       </div>
     </div>
   );
