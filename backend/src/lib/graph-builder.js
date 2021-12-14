@@ -11,11 +11,11 @@ class GraphBuilder {
 		this.graph = new Graph();
 
 		for (let node of this.inputJSON.nodes) {
-			this.graph.addVertex(node.data.id);
+			this.graph.addVertex(node.data.id.toString());
 		}
 
 		for (let edge of this.inputJSON.edges) {
-			this.graph.addEdge(edge.data.source, edge.data.target, parseFloat(edge.data.weight), edge.data.weight);
+			this.graph.addEdge(edge.data.source.toString(), edge.data.target.toString(), parseFloat(edge.data.weight), edge.data.weight);
 		}
 	}
 };

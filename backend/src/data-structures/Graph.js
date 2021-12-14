@@ -3,70 +3,88 @@ const GraphEdge = require('./GraphEdge');
 
 class Graph {
 	constructor() {
-		this.vertices = {};
-		this.edges = {};
+		this.verticesMap = {};
+		this.vertices = [];
+		this.edges = [];
+		this.adjMatrix = {};
+		this.adjMatrixGenned = false;
 	}
 
 	addVertex(key) {
-		if (!this.vertices[key]) {
-			this.vertices[key] = new GraphVertex(key);
+		if (!this.verticesMap[key]) {
+			const vertex = new GraphVertex(key);
+			this.verticesMap[key] = vertex;
+			this.vertices.push(vertex);
 		}
 
 		return this;
 	}
 
 	getVertex(key) {
-		return this.vertices[key];
+		return this.verticesMap[key];
 	}
 
 	addEdge(srcKey, destKey, weight, label) {
-		if (!this.vertices[srcKey] || !this.vertices[destKey]) {
+		srcKey = srcKey.toString();
+		destKey = destKey.toString();
+		const srcVertex = this.getVertex(srcKey);
+		const destVertex = this.getVertex(destKey);
+
+		if (!srcVertex || !destVertex) {
 			throw new Error('Missing required parameters for addEdge method');
 		}
 
-		if (!this.edges[srcKey]) {
-			this.edges[srcKey] = {};
-		}
-
-		if (!this.edges[srcKey][destKey]) {
-			this.edges[srcKey][destKey] = [];
-		}
-
-		this.edges[srcKey][destKey].push(new GraphEdge(this.vertices[srcKey], this.vertices[destKey], weight, label));
+		const newEdge = srcVertex.addEdge(destVertex, weight, label);
+		this.edges.push(newEdge);
 
 		return this;
 	}
 
-	getNeighbours(srcKey) {
-		return Object.keys(this.edges[srcKey]);
+	getSortedEdges() {
+		const sortedEdges = [...this.edges];
+		return sortedEdges.sort((a, b) => b.weight - a.weight);
 	}
 
 	getAdjMatrix() {
-		const adjMatrix = {};
+		if (!this.adjMatrixGenned) {
+			this.adjMatrixGenned = true;
+			this.genAdjMatrix();
+		}
 
-		for (let srcVertex in this.vertices) {
-			if (!adjMatrix[srcVertex]) {
-				adjMatrix[srcVertex] = {};
+		const psuedoAdjMatrix = {};
+		for (let i in this.adjMatrix) {
+			if (!psuedoAdjMatrix[i]) {
+				psuedoAdjMatrix[i] = {};
 			}
 
-			for (let destVertex in this.edges[srcVertex]) {
-				adjMatrix[srcVertex][destVertex] = this.getMaxWeightEdge(this.edges[srcVertex][destVertex]);
+			for (let j in this.adjMatrix[i]) {
+				psuedoAdjMatrix[i][j] = this.adjMatrix[i][j];
 			}
 		}
 
-		return adjMatrix;
+		return psuedoAdjMatrix;
 	}
 
-	getMaxWeightEdge(edges) {
-		let max = edges[0].weight;
+	genAdjMatrix() {
+		let ei;
+		for (let vi of this.vertices) {
+			if (!this.adjMatrix[vi.key]) {
+				this.adjMatrix[vi.key] = {};
+			}
 
-		for (let edge of edges) {
-			if (edge.weight > max) {
-				max = edge.weight;
+			for (let vj of this.vertices) {
+				if (!this.adjMatrix[vi.key][vj.key]) {
+					if (vi.key === vj.key) {
+						this.adjMatrix[vi.key][vj.key] = 0;
+					} else {
+						ei = vi.getMaxWeightEdge(vj.key);
+						this.adjMatrix[vi.key][vj.key] = ei === Number.NEGATIVE_INFINITY ? Number.NEGATIVE_INFINITY : ei.weight;
+					}
+				}
 			}
 		}
 
-		return max;
+		return this.adjMatrix;
 	}
 };
 

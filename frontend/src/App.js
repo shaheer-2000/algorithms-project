@@ -5,6 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Skeleton from '@mui/material/Skeleton';
+import Dialog from '@material-ui/core/Dialog';
+import { DialogTitle, List, ListItem } from '@material-ui/core';
 
 const GRAPH_WIDTH = "75vw";
 const GRAPH_HEIGHT = "80vh";
@@ -46,6 +48,8 @@ function App() {
   const [algorithm, setAlgorithm] = useState(DEFAULT_ALGORITHM)
   const [currentGraphData, setCurrentGraphData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [globalCC, setGlobalCC] = useState(0);
+  const [ccDialogIsOpen, setCCDialogIsOpen] = useState(false);
 
   const classes = useStyles();
 
@@ -93,32 +97,51 @@ function App() {
     setIsLoading(false);
   };
 
+  const handleCCDialogClose = () => {
+    setCCDialogIsOpen(false);
+    setAlgorithm(DEFAULT_ALGORITHM);
+  };
+
   const handleAlgorithmTab = async (e, v) => {
     setIsLoading(true);
     const algoResultId = `${nodeCount}-${v}`;
     let res = localStorage.getItem(algoResultId);
-    if (!res) {
-      res = await axios.get(`${URL}/algorithms/${v}/${nodeCount}`);
-      // TODO: check how clustering-coeff and boruvka work
-      res = {
-        nodes: [
-          ...res.data.nodes
-        ],
-        edges: [
-          ...res.data.edges
-        ]
-      };
-
-      localStorage.setItem(algoResultId, JSON.stringify(res));
-    } else {
-      res = JSON.parse(res);
-    }
 
     // TODO: check how clustering-coeff and boruvka work
     // have switch here just in case some work differently
     switch (v) {
+      case 'clustering-coefficient':
+        if (!res) {
+          res = await axios.get(`${URL}/algorithms/${v}/${nodeCount}`);
+          res = res.data;
+          localStorage.setItem(algoResultId, JSON.stringify(res));
+        } else {
+          res = JSON.parse(res);
+        }
+
+        setGlobalCC(res.globalCC);
+        setCCDialogIsOpen(true);
+        break;
+
       default:
       case 'prims':
+        if (!res) {
+          res = await axios.get(`${URL}/algorithms/${v}/${nodeCount}`);
+          // TODO: check how clustering-coeff and boruvka work
+          res = {
+            nodes: [
+              ...res.data.nodes
+            ],
+            edges: [
+              ...res.data.edges
+            ]
+          };
+    
+          localStorage.setItem(algoResultId, JSON.stringify(res));
+        } else {
+          res = JSON.parse(res);
+        }
+
         setCurrentGraphData((currentGraphData) => res);
         break;
     }
@@ -209,6 +232,16 @@ function App() {
           />
         }
       </div>
+
+      <Dialog
+        open={ccDialogIsOpen}
+        onClose={handleCCDialogClose}
+      >
+        <DialogTitle>Global Clustering Co-efficient</DialogTitle>
+        <List>
+          <ListItem>Global CC: {globalCC.toFixed(2)}</ListItem>
+        </List>
+      </Dialog>
     </div>
   );
 }

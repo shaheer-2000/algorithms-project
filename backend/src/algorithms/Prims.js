@@ -26,7 +26,7 @@ class Prims {
 			for (let i of vertices) {
 				if (traversedVertices[i]) {
 					for (let j of vertices) {
-						if (!traversedVertices[j] && adjMatrix[i][j]) {
+						if (!traversedVertices[j] && (adjMatrix[i][j] !== Number.NEGATIVE_INFINITY)) {
 							if (max < adjMatrix[i][j]) {
 								max = adjMatrix[i][j];
 								src = i;
