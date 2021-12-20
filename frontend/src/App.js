@@ -7,7 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import Skeleton from '@mui/material/Skeleton';
 import Dialog from '@material-ui/core/Dialog';
 import { DialogTitle, List, ListItem } from '@material-ui/core';
-
+import Typography from '@mui/material/Typography';
 const GRAPH_WIDTH = "75vw";
 const GRAPH_HEIGHT = "80vh";
 
@@ -50,7 +50,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [globalCC, setGlobalCC] = useState(0);
   const [ccDialogIsOpen, setCCDialogIsOpen] = useState(false);
-
+  const [localCCs, setLocalCCs] = useState([]);
   const classes = useStyles();
 
   useEffect(() => {
@@ -119,7 +119,8 @@ function App() {
           res = JSON.parse(res);
         }
 
-        setGlobalCC(res.globalCC);
+        setGlobalCC(res.global);
+        setLocalCCs(res.locals);
         setCCDialogIsOpen(true);
         break;
 
@@ -237,9 +238,25 @@ function App() {
         open={ccDialogIsOpen}
         onClose={handleCCDialogClose}
       >
-        <DialogTitle>Global Clustering Co-efficient</DialogTitle>
+        <DialogTitle>
+          <Typography variant="h5">
+            Global Clustering Co-efficient
+          </Typography>
+          </DialogTitle>
         <List>
-          <ListItem>Global CC: {globalCC.toFixed(2)}</ListItem>
+          <ListItem>          
+            <Typography variant="body2">
+              Global CC: {globalCC.toFixed(2)}
+            </Typography>
+          </ListItem>
+          {
+            localCCs.map((l) => (
+            <ListItem key={l.key}>
+              <Typography variant="body2">
+                Local CC (Vertex: {l.key}): {l.cc.toFixed(2)}
+              </Typography>
+            </ListItem>))
+          }
         </List>
       </Dialog>
     </div>

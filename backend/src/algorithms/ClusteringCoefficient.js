@@ -30,12 +30,22 @@ class ClusteringCoefficient {
 
 	getGlobalCC() {
 		let globalCC = 0, numOfVertices = this.graph.vertices.length;
+		const localCCs = [];
+		let cc;
 
 		for (let vertex of this.graph.vertices) {
-			globalCC += this.getLocalCC(vertex);
+			cc = this.getLocalCC(vertex);
+			localCCs.push({
+				key: vertex.key,
+				cc
+			});
+			globalCC += cc;
 		}
 
-		return globalCC / numOfVertices;
+		return {
+			global: globalCC / numOfVertices,
+			locals: localCCs
+		}
 	}
 };
 

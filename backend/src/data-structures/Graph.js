@@ -5,6 +5,7 @@ class Graph {
 	constructor() {
 		this.verticesMap = {};
 		this.vertices = [];
+		this.edgesMap = {};
 		this.edges = [];
 		this.adjMatrix = {};
 		this.adjMatrixGenned = false;
@@ -36,6 +37,11 @@ class Graph {
 
 		const newEdge = srcVertex.addEdge(destVertex, weight, label);
 		this.edges.push(newEdge);
+		if (!this.edgesMap[srcKey]) {
+			if (!this.edges[srcKey][destKey]) {
+				this.edges[srcKey][destKey] = newEdge;
+			}
+		}
 
 		return this;
 	}

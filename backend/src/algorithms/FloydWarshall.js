@@ -7,8 +7,22 @@ class FloydWarshall {
 		this.graph = graph;
 	}
 
+	inverseAdjMatrix(adjMatrix) {
+		for (const i in adjMatrix) {
+			for (const j in adjMatrix[i]) {
+				if (adjMatrix[i][j] === Number.NEGATIVE_INFINITY) {
+					adjMatrix[i][j] = Number.POSITIVE_INFINITY;
+				} else {
+					adjMatrix[i][j] = (1 / adjMatrix[i][j]);
+				}
+			}
+		}
+
+		return adjMatrix;
+	}
+
 	findShortestPath(sourceVertex) {
-		const distances = this.graph.getAdjMatrix();
+		const distances = this.inverseAdjMatrix(this.graph.getAdjMatrix());
 
 		const numOfVertices = this.graph.vertices.length;
 		let cost;
@@ -21,7 +35,7 @@ class FloydWarshall {
 					}
 
 					cost = distances[i][k] + distances[k][j];
-					if (cost > distances[i][j]) {
+					if (cost < distances[i][j]) {
 						distances[i][j] = cost;
 					}
 				}
@@ -30,11 +44,11 @@ class FloydWarshall {
 
 		const floydWarshallEdges = [];
 
-		console.log(distances);
+		const inversedDistances = this.inverseAdjMatrix(distances);
 
-		for (let v in distances) {
-			for (let d in distances[v]) {
-				if (distances[v][d] === Number.NEGATIVE_INFINITY || distances[v][d] === 0) {
+		for (let v in inversedDistances) {
+			for (let d in inversedDistances[v]) {
+				if (inversedDistances[v][d] === Number.POSITIVE_INFINITY || inversedDistances[v][d] === 0) {
 					continue;
 				}
 
@@ -43,7 +57,7 @@ class FloydWarshall {
 						id: `e${v}-${d}`,
 						source: v,
 						target: d,
-						weight: `${distances[v][d].toFixed(2)} MB`
+						weight: `${inversedDistances[v][d].toFixed(2)} MB`
 					}
 				});
 			}

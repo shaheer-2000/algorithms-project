@@ -67,6 +67,10 @@ class Dijkstra {
 		const dijkstraEdges = [];
 
 		for (let d in distances) {
+			if (sourceVertex.toString() === d) {
+				continue;
+			}
+
 			dijkstraEdges.push({
 				data: {
 					id: `e${sourceVertex}-${d}`,

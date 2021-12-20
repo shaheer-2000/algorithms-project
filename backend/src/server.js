@@ -9,6 +9,7 @@ const Dijkstra = require('./algorithms/Dijkstra');
 const BellmanFord = require('./algorithms/BellmanFord');
 const FloydWarshall = require('./algorithms/FloydWarshall');
 const ClusteringCoefficient = require('./algorithms/ClusteringCoefficient');
+const Boruvka = require('./algorithms/Boruvka');
 
 const app = express();
 
@@ -190,14 +191,45 @@ module.exports = (parsedInputs) => {
 
 		if (!graphs[numOfNodes].clusteringCoeff) {
 			const clusteringCoeff = new ClusteringCoefficient(graphs[numOfNodes].base.graph);
-			const globalCC = clusteringCoeff.getGlobalCC();
+			const { global, locals } = clusteringCoeff.getGlobalCC();
 	
 			graphs[numOfNodes].clusteringCoeff = {
-				globalCC
+				global,
+				locals
 			};
 		}
 
 		res.json(graphs[numOfNodes].clusteringCoeff);
+	});
+
+	app.get('/algorithms/boruvka/:numOfNodes', (req, res) => {
+		const numOfNodes = req.params.numOfNodes;
+		if (!graphs[numOfNodes] || !graphs[numOfNodes].base) {
+			res.status(404).send({
+				error: 'Invalid input requested'
+			});
+
+			return;
+		}
+	
+		// TODO: unsure if working
+		if (graphs[numOfNodes].boruvka) {
+			delete graphs[numOfNodes].boruvka;
+		}
+
+		if (!graphs[numOfNodes].boruvka) {
+			const boruvka = new Boruvka(graphs[numOfNodes].base.graph);
+			const baseGraph = {
+				...graphs[numOfNodes].base.inputJSON
+			};
+
+			const boruvkaEdges = boruvka.findMST(graphs[numOfNodes].base.inputJSON.sourceNode);
+			baseGraph.edges = boruvkaEdges;
+
+			graphs[numOfNodes].boruvka = baseGraph;
+		}
+
+		res.json(graphs[numOfNodes].boruvka);
 	});
 
 	return app;

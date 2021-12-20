@@ -11,7 +11,7 @@ class BellmanFord {
 		const distances = {};
 
 		for (let vertex of this.graph.vertices) {
-			distances[vertex.key] = Number.NEGATIVE_INFINITY;
+			distances[vertex.key] = Number.POSITIVE_INFINITY;
 		}
 
 		distances[sourceVertex] = 0;
@@ -24,9 +24,9 @@ class BellmanFord {
 				cVertex = edge.srcVertex;
 				dVertex = edge.destVertex;
 
-				cost = distances[cVertex.key] + edge.weight;
-
-				if (distances[cVertex.key] !== Number.NEGATIVE_INFINITY && distances[dVertex.key] < cost) {
+				cost = distances[cVertex.key] + (1 / edge.weight);
+				console.log(cost);
+				if (distances[cVertex.key] !== Number.POSITIVE_INFINITY && distances[dVertex.key] > cost) {
 					distances[dVertex.key] = cost;
 				}
 			}
@@ -35,12 +35,16 @@ class BellmanFord {
 		const bellmanFordEdges = [];
 
 		for (let d in distances) {
+			if (sourceVertex.toString() === d) {
+				continue;
+			}
+
 			bellmanFordEdges.push({
 				data: {
 					id: `e${sourceVertex}-${d}`,
 					source: sourceVertex,
 					target: d,
-					weight: `${distances[d].toFixed(2)} MB`
+					weight: `${(1 / distances[d]).toFixed(2)} MB`
 				}
 			});
 		}
