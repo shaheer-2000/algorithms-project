@@ -12,7 +12,7 @@ const ClusteringCoefficient = require('./algorithms/ClusteringCoefficient');
 const Boruvka = require('./algorithms/Boruvka');
 
 const app = express({
-	origin: 'http://159.223.53.40:3000/'
+	origin: 'http://159.223.53.40:3000'
 });
 
 app.use(morgan('tiny'));
