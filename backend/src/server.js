@@ -11,7 +11,9 @@ const FloydWarshall = require('./algorithms/FloydWarshall');
 const ClusteringCoefficient = require('./algorithms/ClusteringCoefficient');
 const Boruvka = require('./algorithms/Boruvka');
 
-const app = express();
+const app = express({
+	origin: '159.223.53.40:3000'
+});
 
 app.use(morgan('tiny'));
 app.use(cors());
