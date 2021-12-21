@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 const nodeCounts = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 const algorithms = ['prims', 'kruskal', 'dijkstra', 'bellman-ford', 'floyd-warshall', 'clustering-coefficient', 'boruvka'];
 
-const URL = 'http://localhost:8001';
+const URL = process.env.REACT_APP_API_URL;
 
 const DEFAULT_NODE_COUNT = 10;
 const DEFAULT_ALGORITHM = false;
